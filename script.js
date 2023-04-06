@@ -2,18 +2,20 @@
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
-  var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-  var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var numbers = "0123456789";
-  var specialChar = "!#%$'()*+,-./:;<=>?@[\]^_`{|}~"
+  var lowerCase = ["abcdefghijklmnopqrstuvwxyz"];
+  var upperCase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
+  var numbers = ["0123456789"];
+  var specialChar = ["!#%$'()*+,-./:;<=>?@[\]^_`{|}~"];
+  var minLength = 8;
+  var maxLength= 128;
   var pool = [];
   var passwordGenerated = [];
 
 
 // number of characters
 var passwordLength = parseInt(prompt("Choose a password length between 8-128 characters"));
-  if(passwordLength < 8 || passwordLength > 128){
-    prompt("Please choose between 8 and 128");
+  if(passwordLength < minLength || passwordLength > maxLength){
+    alert("Please choose between 8 and 128");
   }
 
 //include lowercase letters
