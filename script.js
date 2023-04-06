@@ -9,13 +9,12 @@ function generatePassword(){
   // var minLength = 8;
   // var maxLength= 128;
   var pool = [];
-  // pool = pool.concat(passwordLength,lowerCase,upperCase,numbers,specialChar);
   var passwordGenerated = [];
 
 
 // number of characters
 var passwordLength = parseInt(prompt("Choose a password length between 8-128 characters"));
-  if(passwordLength < 8 || passwordLength > 128){
+  if(passwordLength < 8 || passwordLength > 128 === true){
     alert("Please choose between 8 and 128");
     pool = pool.concat(passwordLength);
     // console.log(pool);
@@ -56,7 +55,7 @@ var addCharacters = confirm("Would you like to add special characters?");
 
 for(var i = 0; i < passwordLength; i++){
   passwordGenerated = (pool[Math.floor(Math.random() * pool.length)]);
-  return passwordGenerated;
+ return passwordGenerated;
 }
 
 
