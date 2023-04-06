@@ -1,5 +1,5 @@
-// Assignment code here
-
+// Get references to the #generate element
+var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
   var lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -44,14 +44,14 @@ var addCharacters = confirm("Would you like to add special characters?");
   return alert("Must pick at least one");
  }
 
-console.log(pool);
+
 for(var i = 0; i < passwordLength; i++){
-  passwordGenerated.push(pool[Math.floor(Math.random() * pool.passwordLength)]);
+  passwordGenerated = pool[Math.floor(Math.random() * pool.length)];
+  return passwordGenerated;
 }
 
+
 }
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
