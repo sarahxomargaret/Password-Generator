@@ -9,6 +9,7 @@ function generatePassword(){
   // var minLength = 8;
   // var maxLength= 128;
   var pool = [];
+  // pool = pool.concat(passwordLength,lowerCase,upperCase,numbers,specialChar);
   var passwordGenerated = [];
 
 
@@ -16,30 +17,36 @@ function generatePassword(){
 var passwordLength = parseInt(prompt("Choose a password length between 8-128 characters"));
   if(passwordLength < 8 || passwordLength > 128){
     alert("Please choose between 8 and 128");
+    pool = pool.concat(passwordLength);
+    // console.log(pool);
   }
 
 //include lowercase letters
 var addLower = confirm("Would you like to add lowercase letters?");
   if (addLower === true){
     pool = pool.concat(lowerCase);
+    // console.log(pool);
   }
 
 //include uppercase letters
 var addUpper = confirm("Would you like to add uppercase letters?");
   if (addUpper === true){
     pool = pool.concat(upperCase);
+    // console.log(pool);
   }
 
 //include numbers
 var addNumbers = confirm("Would you like to add numbers?");
   if (addNumbers === true){
     pool = pool.concat(numbers);
+    // console.log(pool);
   }
 
 //include special characters
 var addCharacters = confirm("Would you like to add special characters?");
  if (addCharacters === true){
   pool = pool.concat(specialChar);
+  // console.log(pool);
  }
 
  if (!addLower && !addUpper && !addNumbers && !addCharacters){
