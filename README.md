@@ -9,6 +9,7 @@ The idea of this project was to create a password generator that can be 8 to 128
 ![password](https://user-images.githubusercontent.com/127162545/230256377-e22409a1-576d-4811-8378-6f2c86dfe4ef.PNG)
 
 https://github.com/sarahxomargaret/Password-Generator
+
 https://sarahxomargaret.github.io/Password-Generator/
 
 ## License
