@@ -10,6 +10,8 @@ The idea of this project was to create a password generator that can be 8 to 128
 
 https://github.com/sarahxomargaret/Password-Generator
 
+https://sarahxomargaret.github.io/Password-Generator/
+
 ## License
 
 MIT License
